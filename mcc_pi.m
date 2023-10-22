@@ -15,7 +15,11 @@ function mcc_pi()
 
     figure;
     plot(1:n, priblizek_pi);
-
+    title('Približek za π s pomočjo metode Monte Carlo');
+    xlabel('Število generiranih točk');
+    ylabel('Približek π');
+    legend("Približek π");
     fprintf('Končni približek π: %f\n', priblizek_pi(n));
+    
 end
 
